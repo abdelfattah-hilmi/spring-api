@@ -2,9 +2,7 @@ package com.example.tmp.rest;
 
 
 import com.example.tmp.domain.Category;
-import com.example.tmp.domain.Product;
 import com.example.tmp.service.facade.CategoryService;
-import com.example.tmp.service.facade.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
