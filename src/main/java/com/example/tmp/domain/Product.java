@@ -1,7 +1,7 @@
 package com.example.tmp.domain;
 
 import javax.persistence.*;
-import com.example.tmp.domain.Category;
+// import com.example.tmp.domain.Category;
 
 @Entity
 @Table(name="Product")

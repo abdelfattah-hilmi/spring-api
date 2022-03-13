@@ -1,10 +1,13 @@
 package com.example.tmp.service.implementation;
 
 import com.example.tmp.domain.Category;
+import com.example.tmp.exceptions.UserNotFoundException;
 import com.example.tmp.repository.CategoryRepository;
 import com.example.tmp.service.facade.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import static com.example.tmp.config.Consts.*;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -17,8 +20,9 @@ public class CategoryServiceImplem implements CategoryService {
     private CategoryRepository categoryRepository;
 
     @Override
-    public List<Category> findAll(){
-        return categoryRepository.findAll();
+    public List<Category> findAll() throws Exception{
+        throw new UserNotFoundException(USER_NOT_FOUND);
+        // return categoryRepository.findAll();
     }
 
     @Override

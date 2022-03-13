@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CategoryService {
-    public List<Category> findAll();
+    public List<Category> findAll() throws Exception;
     public Optional<Category> findById(Long id );
     public Category save(Category category);
-
+    
 }

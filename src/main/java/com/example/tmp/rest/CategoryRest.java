@@ -19,7 +19,7 @@ public class CategoryRest {
     }
 
     @GetMapping("/")
-    public List<Category> findAll() {
+    public List<Category> findAll() throws Exception {
         return categoryService.findAll();
     }
 

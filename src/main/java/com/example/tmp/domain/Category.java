@@ -16,7 +16,7 @@ public class Category {
         Other
     }
 
-
+    //TODO aspect programming, Triggers, spring security !!!
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
